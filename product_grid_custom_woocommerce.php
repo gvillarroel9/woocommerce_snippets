@@ -1,5 +1,6 @@
 //[property_grid category="santiago" qty="4"]
-
+//global $wp_query; for all product archive page
+<?php
 	function property_custom_grid($atts = [], $content = null, $tag = ''){
     	$atts = array_change_key_case((array)$atts, CASE_LOWER); 
     	$wporg_atts = shortcode_atts(

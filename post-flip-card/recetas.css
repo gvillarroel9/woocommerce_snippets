@@ -1,0 +1,219 @@
+
+
+
+  .lds-ripple {
+    width: 180px;
+    height: 180px;
+  }
+  .lds-ripple div {
+    
+    border: 4px solid #FAAF42;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+  .card-container { /* how the card looks*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.post-content *{
+    font: bold  15px/1.5 Roboto, Verdana, sans-serif;
+    text-align: justify;
+}
+
+
+
+.card-receta {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    background-color: white;
+    width: 100%;
+    font-family: Roboto;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    margin-bottom: 16px;
+}
+
+.card-side-receta {
+    transition: all 1s ease;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.front-receta {
+    text-align: center;
+    transition: transform 0.8s;
+    height: 350px;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.yellow {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #FAAF42;
+}
+
+.receta-title {
+    font-family: Roboto;
+    font-weight: 900 !important;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.back-receta {
+    transition: transform 0.8s;
+    transform: rotateY(180deg);
+    margin-top: -350px;
+    height: 350px;
+    overflow-y: scroll;    
+}
+
+.text {
+    padding: 20px 30px 20px 20px;
+}
+
+.back-title {
+    text-align: center;
+}
+
+.back-text {
+    text-align: justify;
+}
+
+.card-btn {
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: #FAAF42;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: #FAAF42 1px solid;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #FAAF42;;
+    border-radius: 10px;
+    border: solid 1px #ccc;
+  }
+  
+    .grid-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat( auto-fill, minmax(450px, 450px) );
+        grid-column-gap: 10%;
+        grid-row-gap: 2%;
+        padding: 0 40px;
+    }
+    
+    @media (max-width: 800px) {
+        .grid-container {
+            grid-template-columns: repeat( auto-fill, minmax(300px, 1fr) );
+            
+        }
+    }
+
+ .receta-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  
+  .receta-pagination button {
+    color: black;
+    font-family: Roboto;
+    font-weight: 900;
+    margin: 3px;
+    padding: 8px 14px;
+    text-decoration: none;
+    background-color: white;
+    border: solid 2px #FAAF42;
+    border-radius: 50%;
+  }
+  
+  .receta-pagination button.active {
+    background-color: #FAAF42;
+    border-radius: 50%;
+  }
+  
+  .receta-pagination button:hover:not(.active) {
+    background-color: white;
+    border: solid 2px #FAAF42;
+    border-radius: 50%;
+  }
+  
+.lds-ripple {
+    margin-left: 40%;
+  width: 180px;
+  height: 180px;
+}
+.lds-ripple div {
+  border: 4px solid #FAAF42;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+}
+  
+  

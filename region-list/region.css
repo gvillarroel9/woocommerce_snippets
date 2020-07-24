@@ -1,0 +1,212 @@
+.dropbtn {
+    background-color: #e0477f;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 260px;
+    max-height: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow-y: scroll;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #e0477f;
+      color: white;
+      border-radius: 5px;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #8ea631;
+  }
+
+  .region-list{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .filter-list{
+      width: 100%;
+  }
+
+  .region-list li {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 10px;
+    font-weight: bold;
+  }
+
+  .region-list li:hover{
+      color: #8ea631;
+      cursor: context-menu;
+  }
+
+
+  .filter h1{
+      margin-bottom: 0;
+      margin-top: 5px;
+      font-size: 25px;
+      font-weight: bold !important;
+  } 
+
+  .filter {
+      background-color: white;
+      width: 90%;
+      font-family: Roboto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  .divider{
+    border-top: 2px solid #d08526;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  
+  .btn-filter{
+    font-family: Roboto;
+    width: 100%;
+    margin: 15px 0px;
+    background-color: #FAAF42;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: #FAAF42 1px solid;
+    border-radius: 5px;
+  }
+
+  hr.solid {
+    border-top: 1px solid #bbb;
+    margin: 30px 0;
+  }
+
+  .left-side{
+    background-color: #FAAF42;
+    padding: 20px;
+  }
+
+
+  .provider-img{
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+  }
+
+    .provider{
+      display: grid;
+      background-color: white;
+      grid-template-columns: 1fr 1.2fr;
+      border-radius: 5px;
+    }
+
+    .provider-info{
+        padding: 10px 15px;
+    }
+
+    .provider-info label{
+        font-weight: 900;
+    }
+
+    .provider-info h3{
+        font-weight: 400;
+    }
+
+    .provider-list{
+        background-color: white;
+        font-family: Roboto;
+        padding: 50px;
+    }
+
+    .providers-section{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .ocult-mobile{
+        display: none;
+    }
+
+    
+
+    @media only screen and (max-width: 600px) {
+        .providers-section{
+            grid-template-columns: 1fr;
+        }
+
+        .ocult-mobile{
+            display: block;
+        }
+
+        .ocult-desktop{
+            display: none;
+        }
+
+        .left-side{
+            display: flex;
+            justify-content: center;
+        }
+
+        .provider{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .provider-list{
+            padding: 10px;
+        }
+    }
+
+    .receta-pagination {
+        display: flex;
+        justify-content:center;
+        margin-top: 30px;
+      }
+      
+      .receta-pagination button {
+        color: black;
+        font-family: Roboto;
+        font-weight: 900;
+        margin: 3px;
+        padding: 8px 14px;
+        text-decoration: none;
+        background-color: white;
+        border: solid 2px #FAAF42;
+        border-radius: 50%;
+      }
+      
+      .receta-pagination button.active {
+        background-color: #FAAF42;
+        border-radius: 50%;
+      }
+      
+      .receta-pagination button:hover:not(.active) {
+        background-color: white;
+        border: solid 2px #FAAF42;
+        border-radius: 50%;
+      }

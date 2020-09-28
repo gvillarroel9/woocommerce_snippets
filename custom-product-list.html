@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<style>
+
+		@keyframes flickerAnimation {
+			0%   { background-color: rgb(170 170 170 / 12%); }
+			50%  { background-color: rgb(170 170 170 / 20%); }
+			100% { background-color: rgb(170 170 170 / 12%); }
+		}
+		@-o-keyframes flickerAnimation{
+			0%   { background-color: rgb(170 170 170 / 12%); }
+			50%  { background-color: rgb(170 170 170 / 20%); }
+			100% { background-color: rgb(170 170 170 / 12%); }
+		}
+		@-moz-keyframes flickerAnimation{
+			0%   { background-color: rgb(170 170 170 / 12%); }
+			50%  { background-color: rgb(170 170 170 / 20%); }
+			100% { background-color: rgb(170 170 170 / 12%); }
+		}
+		@-webkit-keyframes flickerAnimation{
+			0%   { background-color: rgb(170 170 170 / 12%); }
+			50%  { background-color: rgb(170 170 170 / 20%); }
+			100% { background-color: rgb(170 170 170 / 12%); }
+		}
+		.animate-flicker {
+			-webkit-animation: flickerAnimation 1s infinite;
+			-moz-animation: flickerAnimation 1s infinite;
+			-o-animation: flickerAnimation 1s infinite;
+			animation: flickerAnimation 1s infinite;
+		}
+
+		.parrafo-ske{
+			height: 15px;
+			width: 100%;
+			background-color: rgb(170 170 170 / 12%);
+			border-radius: 5px;
+			animation: flickerAnimation 1s infinite;
+			-webkit-animation: flickerAnimation 1s infinite;
+			-moz-animation: flickerAnimation 1s infinite;
+			-o-animation: flickerAnimation 1s infinite;
+		}
+		
+		.imagen-ske{
+			height: 200px;
+			background-color:  rgb(170 170 170 / 32%);
+			border-radius: 5px;
+			margin-bottom: 10px;
+			animation: flickerAnimation 1.5s infinite;
+			-webkit-animation: flickerAnimation 1s infinite;
+			-moz-animation: flickerAnimation 1s infinite;
+			-o-animation: flickerAnimation 1s infinite;
+		}
+
+		.card-ske{			
+			background-color: #d3d3d333;
+			border-radius: 5px;
+			padding: 14px;
+		}
+
+		.grid-ske{
+			display: grid;
+			grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+			grid-gap: 1%;
+		}
+
+		.two-column-ske{
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+			grid-gap: 15%;
+		}
+
+		.price{
+			grid-row: span 2;
+			height: 25px;
+		}
+
+	</style>
+
+	<div id="grid-ske" class="grid-ske">
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+		<div class="card-ske">
+			<div class="imagen-ske"></div>
+			<div class="two-column-ske">
+				<div class="parrafo-ske"></div>
+				<div class="parrafo-ske price"></div>
+				<div class="parrafo-ske"></div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat( auto-fill, minmax(250px, 1fr));
+			grid-gap: 1%;
+		}
+
+		.none{
+			display: none;
+		}
+
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			padding: 14px;
+			font-family: 'Josefin Sans', Sans-Serif;
+		}
+
+		.card:hover {
+			background-color: white;
+		}
+
+		.image-container {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 200px;
+		}
+
+		.card-bottom {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 25px 5px;
+		}
+
+		.button:link,
+		.button:visited {
+			background-color: rgb(219, 108, 17);
+			color: white;
+			text-decoration: none;
+			padding: 5px;
+			font-size: 1.1em;
+		}
+
+		.text h3 {
+			font-size: 20px;
+		}
+
+		.pagination {
+			display: flex;
+			justify-content: center;
+		}
+		
+		.pagination a {
+			font-weight: 300;
+			color: black;
+			float: left;
+			padding: 16px;
+			margin: 0 0.5px;
+			text-decoration: none;
+			background-color: white;
+			font-family: 'Josefin Sans', Sans-Serif;
+			padding-right: 22px;
+			padding-left: 22px;
+		}
+		
+		.pagination a.active,
+		.pagination a:hover {
+			background-color: rgb(219, 108, 17);
+			color: white;
+		}
+	</style>
+
+	<div id="grid-container" class="grid-container">
+		
+	</div>
+	<script src="https://kit.fontawesome.com/c98d362ffb.js" crossorigin="anonymous"></script>
+
+    <div id="pagination" class="pagination">
+        
+	</div>
+	
+	<script>
+
+		const $ = jQuery;
+		getProducts(1);
+		
+		function getProducts(page){
+			$( "#grid-ske" ).addClass("grid-ske");
+			$( "#grid-ske" ).removeClass("none");
+			$( "#grid-container" ).addClass("none");
+			$( "#grid-container" ).removeClass("grid-container");
+			$( "#pagination" ).addClass("none");
+			$( "#pagination" ).removeClass("pagination");
+			$.get("https://modulardesign.cl/new/wp-json/productos/register/"+page, 
+				(data, status) => {     
+					console.log(data);
+					insertProducts(data);
+					insertPages(data.page, data.pages);
+					$( "#grid-ske" ).addClass("none");
+					$( "#grid-ske" ).removeClass("grid-ske");
+					$( "#grid-container" ).addClass("grid-container");
+					$( "#grid-container" ).removeClass("none");
+					$( "#pagination" ).addClass("pagination");
+					$( "#pagination" ).removeClass("none");
+				}
+			);
+		}
+
+		function insertProducts(data){
+			$( "#grid-container" ).empty();
+			data.products.forEach((element,index) => {		
+				$( "#grid-container" ).append( `
+					<div class="card">
+						<div class="image-container" style="background-image: url(${element.img_url});"></div>
+						<div class="card-bottom">
+							<div class="text">
+								<h3>${element.title}</h3>
+								<p>Vanitorio, 1 Cajón</p>
+							</div>
+							<a href="#" class="button">${new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(element.price)}</a>
+						</div>
+					</div>
+				`);
+			});
+		}
+
+		function insertPages(current, total){
+			$( "#pagination" ).empty();
+			$( "#pagination" ).append( `<a><i class="fas fa-chevron-left"></i></a>`);
+			for(let i=1; i<=total; i++ ){
+				$( "#pagination").append( `
+					<a onclick="getProducts(${i})" class="number ${i==current?'active': ''}">${i}</a>
+				`);
+			}
+			$( "#pagination" ).append( `<a><i class="fas fa-chevron-right"></i></a>`);
+		}
+
+	</script>
+
+</body>
+</html>
